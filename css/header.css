@@ -1,0 +1,39 @@
+.header-area {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 10;
+}
+
+.header-contents {
+  -webkit-box-sizing: border-box;
+  width: 100%;
+  max-width: 71.25rem;
+  height: 4.5rem;
+  padding: 1.25rem 2rem;
+  margin: 0 auto;
+}
+
+.header-title {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: hsla(0, 0%, 100%, 0.7);
+  line-height: 2rem;
+  cursor: pointer;
+}
+
+.header-nav-menus {
+  float: right;
+}
+
+.header-nav-menu {
+  display: inline-block;
+  padding: 0 1rem;
+  font-weight: 700;
+  font-size: 1rem;
+  color: hsla(0, 0%, 100%, 0.7);
+  line-height: 2rem;
+  cursor: pointer;
+}
