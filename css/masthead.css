@@ -10,7 +10,7 @@
   left: 0;
   bottom: 0;
   background-image: linear-gradient(rgba(110, 90, 80, 0.8), rgba(110, 90, 80, 0.8)),
-    url(/images/masthead-background.jpg);
+    url(../images/masthead-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
