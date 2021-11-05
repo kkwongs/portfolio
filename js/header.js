@@ -1,4 +1,7 @@
+const headerArea = document.querySelector('.js-header-area');
 const headerNavMenus = document.querySelector('.js-header-nav-menus');
+
+const SHOWING_BG = 'header-background';
 
 const menus = ['About me', 'Skills', 'Archiving', 'Projects'];
 
@@ -11,8 +14,19 @@ function paintMenu() {
   }
 }
 
+function paintBackgorund() {
+  document.addEventListener('scroll', function () {
+    if (document.documentElement.scrollTop) {
+      headerArea.classList.add(SHOWING_BG);
+    } else {
+      headerArea.classList.remove(SHOWING_BG);
+    }
+  });
+}
+
 function init() {
   paintMenu();
+  paintBackgorund();
 }
 
 init();

@@ -1,26 +1,31 @@
 .header-area {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
   background-color: transparent;
   z-index: 10;
+
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 2rem;
+}
+
+.header-background {
+  background-color: white;
+  box-shadow: 0 0.1rem 0.2rem rgba(255, 255, 255, 0.8);
+  color: rgba(10, 10, 10, 0.8);
 }
 
 .header-contents {
-  -webkit-box-sizing: border-box;
-  width: 100%;
-  max-width: 71.25rem;
+  box-sizing: border-box;
   height: 4.5rem;
   padding: 1.25rem 2rem;
-  margin: 0 auto;
 }
 
 .header-title {
   display: inline-block;
   font-size: 1.5rem;
-  color: hsla(0, 0%, 100%, 0.7);
-  line-height: 2rem;
   cursor: pointer;
 }
 
@@ -31,9 +36,6 @@
 .header-nav-menu {
   display: inline-block;
   padding: 0 1rem;
-  font-weight: 700;
   font-size: 1rem;
-  color: hsla(0, 0%, 100%, 0.7);
-  line-height: 2rem;
   cursor: pointer;
 }
