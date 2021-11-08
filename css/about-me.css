@@ -1,0 +1,42 @@
+.about-me-contents {
+  box-sizing: border-box;
+  max-width: 71.25rem;
+  padding: 3rem 2rem;
+  margin: 0 auto;
+}
+
+.about-me-title {
+  display: table;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.75;
+  border-bottom: 1px solid #cccccc;
+  margin: 0 auto 4rem;
+}
+
+.about-me-info {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.about-me-info-wrapper {
+  display: flex;
+  width: 33.3333%;
+  margin-bottom: 2rem;
+}
+
+.about-me-img-wrapper {
+  width: 2rem;
+  min-width: 2rem;
+  margin-right: 2rem;
+}
+
+.about-me-label {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.about-me-value {
+  font-size: 1.1rem;
+}
