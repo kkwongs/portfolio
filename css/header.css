@@ -19,8 +19,10 @@
 
 .header-contents {
   box-sizing: border-box;
+  max-width: 71.25rem;
   height: 4.5rem;
   padding: 1.25rem 2rem;
+  margin: 0 auto;
 }
 
 .header-title {

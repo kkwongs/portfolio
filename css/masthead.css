@@ -19,7 +19,7 @@
 }
 
 .masthead-contents {
-  padding: 8rem 0 2rem;
+  padding: 12rem 0 2rem;
   text-align: center;
 }
 
@@ -38,4 +38,5 @@
   margin-top: 3rem;
   color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
+  line-height: 1.5;
 }
