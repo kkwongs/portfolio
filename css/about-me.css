@@ -1,25 +1,9 @@
-.about-me-contents {
-  box-sizing: border-box;
-  max-width: 71.25rem;
-  padding: 3rem 2rem;
-  margin: 0 auto;
-}
-
-.about-me-title {
-  display: table;
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1.75;
-  border-bottom: 1px solid #cccccc;
-  margin: 0 auto 4rem;
-}
-
-.about-me-info {
+.about-me-container {
   display: flex;
   flex-flow: row wrap;
 }
 
-.about-me-info-wrapper {
+.about-me-container-wrapper {
   display: flex;
   width: 33.3333%;
   margin-bottom: 2rem;

@@ -5,3 +5,19 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.section-title {
+  display: table;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.75;
+  border-bottom: 1px solid black;
+  margin: 0 auto 4rem;
+}
+
+.section-contents {
+  box-sizing: border-box;
+  max-width: 71.25rem;
+  padding: 3rem 2rem;
+  margin: 0 auto;
+}

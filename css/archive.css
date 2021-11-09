@@ -1,0 +1,22 @@
+.archive {
+  display: flex;
+
+  background-color: #a0e7e5;
+}
+
+.archive-container {
+  background-color: white;
+
+  width: 26rem;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+}
+
+.archive-image {
+  width: 12rem;
+  margin-bottom: 1rem;
+}
+
+.archive-description li {
+  margin-bottom: 0.5rem;
+}
