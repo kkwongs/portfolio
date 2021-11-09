@@ -10,12 +10,12 @@ const value = [
   '단국대학교<br />소프트웨어학과',
 ];
 const images = [
-  '../images/person-fill.svg',
-  '../images/calendar-fill.svg',
-  '../images/geo-alt-fill.svg',
-  '../images/telephone-fill.svg',
-  '../images/envelope-fill.svg',
-  '../images/pencil-fill.svg',
+  'images/person-fill.svg',
+  'images/calendar-fill.svg',
+  'images/geo-alt-fill.svg',
+  'images/telephone-fill.svg',
+  'images/envelope-fill.svg',
+  'images/pencil-fill.svg',
 ];
 
 function paintInfo() {
