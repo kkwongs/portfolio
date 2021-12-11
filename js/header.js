@@ -3,7 +3,7 @@ const headerNavMenus = document.querySelector('.js-header-nav-menus');
 
 const SHOWING_BG = 'header-background';
 
-const menus = ['About me', 'Archive', 'Project'];
+const menus = ['About me', 'Archive', 'Projects'];
 
 function paintMenu() {
   for (let i = 0; i < menus.length; i++) {

@@ -1,3 +1,59 @@
-.project {
+.projects {
   background-color: #fbe7c6;
+}
+
+.projects-container {
+  padding: 3rem;
+  margin: 0 auto 2rem;
+  border-radius: 1rem;
+  background-color: white;
+}
+
+.project-title {
+  text-align: center;
+
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.project-period {
+  text-align: center;
+
+  font-size: 1rem;
+  opacity: 0.5;
+  margin-bottom: 1.5rem;
+}
+
+.project-info {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.project-img {
+  overflow: hidden;
+  position: relative;
+  width: 50%;
+  margin-right: 3rem;
+}
+
+.project-descriptions {
+  width: calc(50% - 3rem);
+}
+
+.project-description {
+  margin-bottom: 1rem;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: blue;
+}
+
+a:hover {
+  text-decoration: underline;
 }
