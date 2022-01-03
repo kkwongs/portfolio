@@ -8,9 +8,12 @@ const menus = ['About me', 'Archive', 'Projects'];
 function paintMenu() {
   for (let i = 0; i < menus.length; i++) {
     const div = document.createElement('div');
+    const a = document.createElement('a');
     div.className = 'header-nav-menu';
     div.innerHTML = menus[i];
-    headerNavMenus.appendChild(div);
+    a.href = `#${menus[i]}`;
+    a.appendChild(div);
+    headerNavMenus.appendChild(a);
   }
 }
 

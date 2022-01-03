@@ -6,6 +6,10 @@ body {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .section-title {
   display: table;
   font-size: 3rem;
@@ -18,6 +22,6 @@ body {
 .section-contents {
   box-sizing: border-box;
   max-width: 71.25rem;
-  padding: 3rem 2rem;
+  padding: 4.5rem 2rem;
   margin: 0 auto;
 }
