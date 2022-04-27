@@ -1,133 +1,160 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KKWONG's portfolio</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+    <title>KKWONG's Portfolio</title>
+    <!-- 브라우저스타일 초기화 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <!-- Google Material Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- GSAP -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"
+      integrity="sha512-bD2JVWcpIS1kkd7gbzcVKfGbwLTRKL+2RT55rGbhSp/nqCz8vanLuZ8O5K1FLtyPoS2RvLD9sThVgHdgrHFBPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- LODASH -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+      integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script defer src="./js/main.js"></script>
+  </head>
   <body>
-    <header class="js-header-area header-area">
-      <div class="header-contents">
-        <a href="#">
-          <div class="js-header-title header-title">KKWONG's Portfolio</div>
-        </a>
-        <div class="js-header-nav-menus header-nav-menus"></div>
+    <header>
+      <div class="inner">
+        <div class="header-title">
+          <a href="#">KKWONG'S Portfolio</a>
+        </div>
+        <ul class="menu">
+          <li>
+            <a href="#about-me">About me</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+        </ul>
       </div>
     </header>
 
-    <article>
-      <section class="masthead">
-        <div class="masthead-contents">
-          <div class="masthead-title">권기현</div>
-          <hr class="masthead-divider" />
-          <div class="masthead-description">
-            <p>Front-End Developer</p>
-            <p>
-              안녕하세요.
-              <br />
-              끊임없이 성장하기 위해 노력하는 프론트엔드 개발자입니다.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="about-me" id="About me">
-        <div class="section-contents">
-          <div class="section-title">About me</div>
-          <div class="js-about-me-container about-me-container"></div>
-        </div>
-      </section>
-
-      <section class="archive" id="Archive">
-        <div class="section-contents">
-          <div class="section-title">Archive</div>
-          <div class="archive-container">
-            <div class="archive-image">
-              <a href="https://github.com/kkwongs" target="_blank">
-                <img src="images/git-hub.png" alt="GitHub" />
-              </a>
-            </div>
-            <div class="archive-description">
-              <p><b>소스 코드 저장소</b>입니다.</p>
-              <ul>
-                <li>코딩 연습을 위한 PS 소스 코드</li>
-                <li>인터넷 강의를 통해 공부한 소스 코드</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="projects" id="Projects">
-        <div class="section-contents">
-          <div class="section-title">Projects</div>
-          <div class="projects-container">
-            <div class="project-title">광고 돼지</div>
-            <div class="project-period">
-              2020.05 - 2021.03<br />
-              2021.12 - 진행중<br />
-              (3인 팀 프로젝트)
-            </div>
-            <div class="project-info">
-              <div class="project-img">
-                <img src="images/광고돼지.png" alt="광고 돼지 메인 페이지" />
-              </div>
-              <div class="project-descriptions">
-                <div class="project-description">> 주요 기능: 자영업자분들의 페이지를 쉽고 빠르게 광고</div>
-                <div class="project-description">
-                  > GitHub:
-                  <a href="https://github.com/pigs-pango-team/gg-pigs-web" target="_blank">
-                    github.com/pigs-pango-team/gg-pigs-web
-                  </a>
-                </div>
-                <div class="project-description">
-                  > 도메인:
-                  <a href="https://gg-pigs.com/" target="_blank">gg-pigs.com </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="projects-container">
-            <div class="project-title">포트폴리오 웹사이트</div>
-            <div class="project-period">2021.11 - 진행중 (1인 개인 프로젝트)</div>
-            <div class="project-info">
-              <div class="project-img">
-                <img src="images/포트폴리오.jpg" alt="포트폴리오 메인 페이지" />
-              </div>
-              <div class="project-descriptions">
-                <div class="project-description">
-                  > 주요 기능: 간단한 자기소개 및 인적사항, GitHub 링크, 프로젝트 경험
-                </div>
-                <div class="project-description">
-                  > GitHub:
-                  <a href="https://github.com/kkwongs/portfolio" target="_blank"> github.com/kkwongs/portfolio </a>
-                </div>
-                <div class="project-description">
-                  > 도메인:
-                  <a href="https://kkwongs.github.io/portfolio/" target="_blank">kkwongs.github.io/portfolio/ </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </article>
-
-    <footer class="footer-area">
-      <div class="footer-icons">
-        <div class="footer-icon-wrapper">
-          <img src="images/git-hub-logo.png" alt="GitHub" />
+    <section class="masthead">
+      <div class="inner">
+        <div class="title">Front-End Developer</div>
+        <div class="description">
+          안녕하세요.<br />
+          배우는 것과 배운 지식을 적용하는 것을 좋아하는 웹 개발자입니다.<br />
+          어떤 일을 하더라도 기본기를 중요하게 생각합니다.
         </div>
       </div>
-      <div class="footer-copyright">
-        <p>&copy; 2021. KKOWNG's. All Rights Reserved</p>
+    </section>
+
+    <section class="about-me" id="about-me">
+      <div class="inner">
+        <div class="title">About me</div>
+        <ul class="info">
+          <li>
+            <div class="material-icons">person</div>
+            <div>
+              <div class="title">이름</div>
+              <div class="description">권기현</div>
+            </div>
+          </li>
+          <li>
+            <div class="material-icons">event</div>
+            <div>
+              <div class="title">생년월일</div>
+              <div class="description">95.10.26</div>
+            </div>
+          </li>
+          <li>
+            <div class="material-icons">place</div>
+            <div>
+              <div class="title">주소</div>
+              <div class="description">경기도 용인시 기흥구</div>
+            </div>
+          </li>
+          <li>
+            <div class="material-icons">phone</div>
+            <div>
+              <div class="title">연락처</div>
+              <div class="description">010 6512 5741</div>
+            </div>
+          </li>
+          <li>
+            <div class="material-icons">email</div>
+            <div>
+              <div class="title">이메일</div>
+              <div class="description">kihyun5741@gmail.com</div>
+            </div>
+          </li>
+          <li>
+            <div class="material-icons">school</div>
+            <div>
+              <div class="title">학력</div>
+              <div class="description">단국대학교 소프트웨어학과</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <div class="inner">
+        <div class="title">Projects</div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/project1.png" alt="PORTFOLIO" />
+              <div class="btn">자세히 보기</div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="inner">
+        <a href="https://github.com/kkwongs" target="_blank" class="git-logo">
+          <img src="./images/git-hub-logo.png" alt="GitHub" />
+        </a>
+        <div class="copyright">&copy; 2021. KKOWNG'S. All Rights Reserved</div>
       </div>
     </footer>
 
-    <script src="js/header.js"></script>
-    <script src="js/about-me.js"></script>
+    <!-- TOP -->
+    <a href="#" class="btn__top">
+      <div class="material-icons">vertical_align_top</div>
+    </a>
   </body>
 </html>
