@@ -201,14 +201,16 @@ header .menu li a:hover {
   box-sizing: border-box;
 }
 .projects .dialog.hidden {
+  opacity: 0;
   display: none;
 }
 .projects .dialog .inner {
   background-color: #fff;
   border-radius: 10px;
-  height: 100%;
+  height: 660px;
   position: relative;
   padding: 0 64px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 .projects .dialog .cancel {
   cursor: pointer;
@@ -231,6 +233,15 @@ header .menu li a:hover {
 .projects .dialog .info .title .material-icons {
   font-size: 32px;
   margin-right: 8px;
+}
+.projects .dialog a {
+  color: #333;
+}
+.projects .dialog a:hover {
+  color: blue;
+}
+.projects .dialog a:active {
+  color: red;
 }
 
 /* FOOTER */
