@@ -235,10 +235,10 @@ header .menu li a:hover {
   margin-right: 8px;
 }
 .projects .dialog a {
-  color: #333;
+  color: blue;
 }
 .projects .dialog a:hover {
-  color: blue;
+  text-decoration: underline;
 }
 .projects .dialog a:active {
   color: red;
