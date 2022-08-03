@@ -103,7 +103,7 @@ header .menu li a:hover {
 
 /* MASTHED */
 .masthead {
-  background-image: url('/images/masthead-background.jpg');
+  background-image: url('../images/masthead-background.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
