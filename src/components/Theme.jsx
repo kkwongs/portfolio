@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './ToggleTheme.css';
+import './Theme.module.scss';
 
 export const ToggleTheme = () => {
   const [isDark, setIsDark] = useState(false);

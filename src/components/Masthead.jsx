@@ -1,4 +1,4 @@
-import styles from '../styles/Masthead.module.css';
+import styles from './Masthead.module.scss';
 
 export default function MastheadSection() {
   return (

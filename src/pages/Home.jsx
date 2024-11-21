@@ -1,28 +1,29 @@
-import { ToggleTheme } from '../components/ToggleTheme';
-import MastheadSection from '../components/MastheadSection';
-import styles from '../styles/Home.module.css';
+import Masthead from '../components/Masthead';
+import About from '../components/About';
+import { ToggleTheme } from '../components/Theme';
+import styles from './Home.module.scss';
 
 function Home() {
   function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-  function scrollToSection() {
+  function scrollToSection(section) {
     const headerHeight = document.querySelector('.header').offsetHeight;
-    const sectionOffset = document.querySelector('.masthead').offsetTop;
+    const sectionOffset = document.querySelector(`.${section}`).offsetTop;
     const top = sectionOffset - headerHeight;
 
     window.scrollTo({ top, behavior: 'smooth' });
   }
   return (
     <>
-      <header className={styles.header}>
+      <header className={`${styles.header} header`}>
         <div className={styles['header-container']}>
           <div>
             <button onClick={scrollToTop}>KKwongs's Portfolio</button>
           </div>
           <div className={styles['right-content']}>
             <nav>
-              <button onClick={scrollToSection}>About me</button>
+              <button onClick={() => scrollToSection('about')}>About me</button>
               <button>Skills</button>
               <button>Archiving</button>
               <button>Projects</button>
@@ -33,9 +34,8 @@ function Home() {
         </div>
       </header>
 
-      <div style={{ height: '3000px' }}></div>
-      <MastheadSection />
-      <div style={{ height: '3000px' }}></div>
+      <Masthead />
+      <About />
 
       <footer></footer>
     </>

@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.module.scss';
 import { BrowserRouter as Router, Routes, Route, Link, NavLink } from 'react-router-dom';
 import Home from './pages/Home';
 
