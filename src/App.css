@@ -1,3 +1,26 @@
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --background: #0a0a0a; */
+    --background: #282c34;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a.active {
+  color: var(--foreground);
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +58,38 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* 스크롤바 전체 영역 */
+::-webkit-scrollbar {
+  width: 15px; /* 세로축 스크롤바 폭 너비 */
+  height: 15px; /* 가로축 스크롤바 폭 너비 */
+}
+::-webkit-scrollbar:hover {
+  width: 100px;
+}
+
+/* 스크롤바 막대 */
+::-webkit-scrollbar-thumb {
+  background: inherit; /* 스크롤바 막대 색상 */
+  border: 3px solid #9b6a2f; /* 스크롤바 막대 테두리 설정  */
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a0a0a5;
+}
+
+/* 스크롤이 움직이는 뒷 배경 */
+::-webkit-scrollbar-track {
+  background: #9b6a2f; /* 스크롤바 뒷 배경 색상 */
+}
+
+/* 상하+좌우 스크롤이 만나는 우측 하단의 코너 부분   */
+::-webkit-scrollbar-corner {
+  background: #9b6a2f;
 }
